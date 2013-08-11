@@ -18,6 +18,8 @@ PRODUCT_PACKAGES += \
     wlan_tool \
     wmiconfig
 
+BOARD_WLAN_DEVICE := ath6kl_compat
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
