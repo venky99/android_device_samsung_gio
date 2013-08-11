@@ -18,6 +18,9 @@ PRODUCT_PACKAGES += \
     wlan_tool \
     wmiconfig
 
+## Build the 3.0.x Kernel
+BUILD_WITH_30X_KERNEL := true
+
 BOARD_WLAN_DEVICE := ath6kl_compat
 
 ## Ramdisk
