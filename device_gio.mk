@@ -26,8 +26,9 @@ PRODUCT_PACKAGES += \
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
+    device/samsung/msm7x27-common/ramdisk/fstab.msm7x27:root/fstab.gt-s5660board
 
-# Inherit products (Most specific first)
+## Inherit products (Most specific first)
 # gio blobs > samsung common(device/vendor) > other blobs
 $(call inherit-product, vendor/samsung/gio/vendor_blobs.mk)
 $(call inherit-product, device/samsung/msm7x27-common/common.mk)
