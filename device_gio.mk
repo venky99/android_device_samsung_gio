@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle \
-    device/samsung/gio/ramdisk/init.msm7x27.rc:root/init.$(SAMSUNG_BOOTLOADER).rc
+    device/samsung/gio/ramdisk/init.msm7x27.rc:root/init.gt-s5660board.rc \
     device/samsung/msm7x27-common/ramdisk/fstab.msm7x27:root/fstab.gt-s5660board
 
 ## Inherit products (Most specific first)
