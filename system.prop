@@ -5,8 +5,9 @@
 # Graphics
 ro.sf.lcd_density=160
 video.accelerate.hw=1
-debug.sf.no_hw_vsync=1
 debug.composition.type=gpu
+debug.sf.hw=1
+debug.gr.numframebuffers=3
 
 # RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
@@ -41,7 +42,7 @@ ro.vold.umsdirtyratio=20
 
 # Dalvik
 dalvik.vm.lockprof.threshold=500
-dalvik.vm.dexopt-flags=m=y
+dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
 dalvik.vm.heapstartsize=5m
 dalvik.vm.heapgrowthlimit=24m
 dalvik.vm.heapsize=64m
